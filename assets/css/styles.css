@@ -1,5 +1,4 @@
 /*===== GOOGLE FONTS =====*/
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
 
 /*===== VARIABLES CSS =====*/
@@ -7,8 +6,8 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #069C54;
-  --first-color-alt: #048654;
+  --first-color: #2F80ED;
+  --first-color-alt: #2D9CDB;
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #A6A6A6;
@@ -399,6 +398,61 @@ img{
 .app__img{
   width: 230px;
   justify-self: center;
+}
+
+/*=============== EXPERIENCE ===============*/
+.experience__container {
+  row-gap: 2.5rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.experience__content {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  justify-items: center;
+  padding: 0 2rem;
+}
+
+.experience__number {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-0-5);
+}
+
+.experience__description {
+  font-size: var(--small-font-size);
+}
+
+.experience__img {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.experience__img-one, 
+.experience__img-two {
+  transition: var(--img-transition);
+}
+
+.experience__img-one:hover, 
+.experience__img-two:hover {
+  transform: var(--img-scale);
+}
+
+.experience__overlay {
+  overflow: var(--img-hidden);
+}
+
+.experience__overlay:nth-child(1) {
+  width: 263px;
+  margin-right: 2rem;
+}
+
+.experience__overlay:nth-child(2) {
+  width: 120px;
+  position: absolute;
+  top: 2rem;
+  right: 0;
 }
 
 /*========== CONTACT ==========*/
